@@ -1,2 +1,2 @@
 # packages
-List, descriptions, and stats of R packages by @psolymos
+> List, descriptions, and stats of R packages by @psolymos
