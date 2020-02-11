@@ -1,5 +1,0 @@
-Package: placeholder
-Type: Sript
-Title: Does not matter.
-Version: 0.0.1
-Imports: dlstats, jsonlite, devtools
