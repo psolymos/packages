@@ -1,5 +1,5 @@
 Package: placeholder
-Type: Sript
+Type: Script
 Title: Does not matter.
 Version: 0.0.1
 Imports: jsonlite, devtools
