@@ -1,5 +1,19 @@
 # R packages by [@psolymos](https://github.com/psolymos/)
 
+- [mefa](#mefa)
+- [dclone](#dclone)
+- [pbapply](#pbapply)
+- [sharx](#sharx)
+- [mefa4](#mefa4)
+- [ResourceSelection](#resourceselection)
+- [detect](#detect)
+- [dcmle](#dcmle)
+- [PVAclone](#pvaclone)
+- [intrval](#intrval)
+- [opticut](#opticut)
+- [bSims](#bsims)
+- [vegan](#vegan)
+
 ## mefa
 
 1st published: 2007-12-07
