@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-library(dlstats)
 library(jsonlite)
 library(devtools)
 
