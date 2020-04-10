@@ -102,8 +102,7 @@ List <- lapply(pkgs, Format)
 
 dir.create("_stats")
 writeLines(toJSON(Dates), paste0("_stats/dates.json"))
-writeLines(toJSON(rd), paste0("_stats/revdeps_",
-    Today, ".json"))
-writeLines(toJSON(List), paste0("_stats/stats_latest.json"))
+writeLines(toJSON(rd), paste0("_stats/revdeps_", Today, ".json"))
+writeLines(toJSON(List, auto_unbox=TRUE), paste0("_stats/stats_latest.json"))
 cat("OK\n\nDONE\n\n")
 
