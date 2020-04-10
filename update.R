@@ -7,14 +7,26 @@ suppressPackageStartupMessages(library(devtools))
 
 cat("OK\n* Defining functions and variables ... ")
 today <- as.POSIXct(Sys.Date(), tz="America/Edmonton")
+Today <- substr(as.character(today), 1, 10)
+Dates <- sort(unique(
+    c(fromJSON("https://peter.solymos.org/packages/dates.json"),
+    Today)))
 ## package list of interest
-pkgs <- c(
-    ## creator, maintainer
-    "mefa", "mefa4", "dclone", "dcmle", "detect",
-    "sharx", "ResourceSelection", "PVAClone", "pbapply", "opticut",
-    "intrval", "bSims",
-    ## author
-    "vegan", "epiR", "plotrix", "adegenet")
+dat <- list(
+    "mefa"=list(org="psolymos", date1="2007-12-07"),
+    "dclone"=list(org="datacloning", date1="2009-11-05"),
+    "pbapply"=list(org="psolymos", date1="2010-09-03"),
+    "sharx"=list(org="psolymos", date1="2010-12-09"),
+    "mefa4"=list(org="psolymos", date1="2011-02-10"),
+    "ResourceSelection"=list(org="psolymos", date1="2011-06-04"),
+    "detect"=list(org="psolymos", date1="2011-09-29"),
+    "dcmle"=list(org="datacloning", date1="2011-09-29"),
+    "PVAClone"=list(org="datacloning", date1="2012-07-27"),
+    "intrval"=list(org="psolymos", date1="2016-12-06"),
+    "opticut"=list(org="psolymos", date1="2016-12-17"),
+    "bSims"=list(org="psolymos", date1="2019-12-20"),
+    "vegan"=list(org="vegandevs", date1="2001-09-06"))
+pkgs <- names(dat)
 ## download stats
 # after dlstats::cran_stats BUT without caching
 get_stats <- function (packages, drop_last_month=TRUE) {
@@ -54,21 +66,44 @@ dl <- get_stats(pkgs)
 rd <- lapply(pkgs, revdep)
 names(rd) <- pkgs
 
+Rds <- list()
+for (i in Dates[Dates != Today]) {
+    Rds[[i]] <- fromJSON(
+        paste0("https://peter.solymos.org/packages/revdeps_", i, ".json"))
+}
+Rds[[Today]] <- rd
+
 cat("OK\n* Writing results ... ")
 Format <- function(pkg) {
+    revs <- list(
+        date=Dates,
+        count=unname(sapply(Rds, function(z) length(z[[pkg]]))))
+    if (pkg == "pbapply") {
+        revs$date <- c("2016-09-01", "2017-10-01", "2019-07-01",
+            "2019-08-01", "2019-09-01", "2019-10-01", "2019-11-01",
+            "2019-12-01", "2020-01-01", revs$date)
+        revs$count <- c(20, 47, 96, 98, 102, 105, 106, 109, 112, revs$count)
+    }
+    revs$date <- c(dat[[pkg]]$date1, revs$date)
+    revs$count <- c(0, revs$count)
     list(
         name=pkg,
-        date=dl$start[dl$package==pkg],
-        dowloads=dl$downloads[dl$package==pkg],
-        revdep=rd[[pkg]],
-        nrd=length(rd[[pkg]])
+        organization=dat[[pkg]]$org,
+        firstpublish=dat[[pkg]]$date1,
+        downloads=list(
+            date=dl$start[dl$package==pkg],
+            count=dl$downloads[dl$package==pkg]),
+        revdeps=revs,
+        revdeplist=rd[[pkg]],
+        nrevdep=length(rd[[pkg]])
     )
 }
 List <- lapply(pkgs, Format)
 
 dir.create("_stats")
+writeLines(toJSON(Dates), paste0("_stats/dates.json"))
 writeLines(toJSON(rd), paste0("_stats/revdeps_",
-    substr(as.character(today), 1, 7), ".json"))
+    Today, ".json"))
 writeLines(toJSON(List), paste0("_stats/stats_latest.json"))
 cat("OK\n\nDONE\n\n")
 
