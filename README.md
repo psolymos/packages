@@ -1,155 +1,130 @@
-# R packages
-> List, descriptions, and stats of R packages by @psolymos
+# R packages by [@psolymos](https://github.com/psolymos/)
+
+- [mefa](#mefa)
+- [dclone](#dclone)
+- [pbapply](#pbapply)
+- [sharx](#sharx)
+- [mefa4](#mefa4)
+- [ResourceSelection](#resourceselection)
+- [detect](#detect)
+- [dcmle](#dcmle)
+- [PVAclone](#pvaclone)
+- [intrval](#intrval)
+- [opticut](#opticut)
+- [bSims](#bsims)
+- [vegan](#vegan)
 
 ## mefa
 
 1st published: 2007-12-07
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/mefa)
-![](http://cranlogs.r-pkg.org/badges/last-month/mefa)
-![](http://cranlogs.r-pkg.org/badges/last-week/mefa)
-![](http://cranlogs.r-pkg.org/badges/last-day/mefa)
-![](https://tinyverse.netlify.com/badge/mefa)
+[![CRAN version](https://www.r-pkg.org/badges/version/mefa)](https://cran.r-project.org/package=mefa)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/mefa)](https://www.rdocumentation.org/packages/mefa/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/mefa.svg?style=social&label=GitHub)](https://github.com/psolymos/mefa)
 
 ## dclone
 
 1st published: 2009-11-05
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/dclone)
-![](http://cranlogs.r-pkg.org/badges/last-month/dclone)
-![](http://cranlogs.r-pkg.org/badges/last-week/dclone)
-![](http://cranlogs.r-pkg.org/badges/last-day/dclone)
-![](https://tinyverse.netlify.com/badge/dclone)
+[![CRAN version](https://www.r-pkg.org/badges/version/dclone)](https://cran.r-project.org/package=dclone)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/dclone)](https://www.rdocumentation.org/packages/dclone/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/datacloning/dclone.svg?style=social&label=GitHub)](https://github.com/datacloning/dclone)
 
 ## pbapply
 
 1st published: 2010-09-03
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/pbapply)
-![](http://cranlogs.r-pkg.org/badges/last-month/pbapply)
-![](http://cranlogs.r-pkg.org/badges/last-week/pbapply)
-![](http://cranlogs.r-pkg.org/badges/last-day/pbapply)
-![](https://tinyverse.netlify.com/badge/pbapply)
+[![CRAN version](https://www.r-pkg.org/badges/version/pbapply)](https://cran.r-project.org/package=pbapply)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/pbapply)](https://www.rdocumentation.org/packages/pbapply/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/pbapply.svg?style=social&label=GitHub)](https://github.com/psolymos/pbapply)
 
 ## sharx
 
 1st published: 2010-12-09
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/sharx)
-![](http://cranlogs.r-pkg.org/badges/last-month/sharx)
-![](http://cranlogs.r-pkg.org/badges/last-week/sharx)
-![](http://cranlogs.r-pkg.org/badges/last-day/sharx)
-![](https://tinyverse.netlify.com/badge/sharx)
+[![CRAN version](https://www.r-pkg.org/badges/version/sharx)](https://cran.r-project.org/package=sharx)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/sharx)](https://www.rdocumentation.org/packages/sharx/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/sharx.svg?style=social&label=GitHub)](https://github.com/psolymos/sharx)
 
 ## mefa4
 
 1st published: 2011-02-10
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/mefa4)
-![](http://cranlogs.r-pkg.org/badges/last-month/mefa4)
-![](http://cranlogs.r-pkg.org/badges/last-week/mefa4)
-![](http://cranlogs.r-pkg.org/badges/last-day/mefa4)
-![](https://tinyverse.netlify.com/badge/mefa4)
+[![CRAN version](https://www.r-pkg.org/badges/version/mefa4)](https://cran.r-project.org/package=mefa4)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/mefa4)](https://www.rdocumentation.org/packages/mefa4/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/mefa4.svg?style=social&label=GitHub)](https://github.com/psolymos/mefa4)
 
 ## ResourceSelection
 
 1st published: 2011-06-04
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/ResourceSelection)
-![](http://cranlogs.r-pkg.org/badges/last-month/ResourceSelection)
-![](http://cranlogs.r-pkg.org/badges/last-week/ResourceSelection)
-![](http://cranlogs.r-pkg.org/badges/last-day/ResourceSelection)
-![](https://tinyverse.netlify.com/badge/ResourceSelection)
+[![CRAN version](https://www.r-pkg.org/badges/version/ResourceSelection)](https://cran.r-project.org/package=ResourceSelection)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/ResourceSelection)](https://www.rdocumentation.org/packages/ResourceSelection/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/ResourceSelection.svg?style=social&label=GitHub)](https://github.com/psolymos/ResourceSelection)
 
 ## detect
 
 1st published: 2011-09-29
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/detect)
-![](http://cranlogs.r-pkg.org/badges/last-month/detect)
-![](http://cranlogs.r-pkg.org/badges/last-week/detect)
-![](http://cranlogs.r-pkg.org/badges/last-day/detect)
-![](https://tinyverse.netlify.com/badge/detect)
+[![CRAN version](https://www.r-pkg.org/badges/version/detect)](https://cran.r-project.org/package=detect)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/detect)](https://www.rdocumentation.org/packages/detect/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/detect.svg?style=social&label=GitHub)](https://github.com/psolymos/detect)
 
 ## dcmle
 
 1st published: 2011-09-29
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/dcmle)
-![](http://cranlogs.r-pkg.org/badges/last-month/dcmle)
-![](http://cranlogs.r-pkg.org/badges/last-week/dcmle)
-![](http://cranlogs.r-pkg.org/badges/last-day/dcmle)
-![](https://tinyverse.netlify.com/badge/dcmle)
+[![CRAN version](https://www.r-pkg.org/badges/version/dcmle)](https://cran.r-project.org/package=dcmle)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/dcmle)](https://www.rdocumentation.org/packages/dcmle/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/datacloning/dcmle.svg?style=social&label=GitHub)](https://github.com/datacloning/dcmle)
 
 ## PVAclone
 
 1st published: 2012-07-27
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/PVAClone)
-![](http://cranlogs.r-pkg.org/badges/last-month/PVAClone)
-![](http://cranlogs.r-pkg.org/badges/last-week/PVAClone)
-![](http://cranlogs.r-pkg.org/badges/last-day/PVAClone)
-![](https://tinyverse.netlify.com/badge/PVAClone)
+[![CRAN version](https://www.r-pkg.org/badges/version/PVAClone)](https://cran.r-project.org/package=PVAClone)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/PVAClone)](https://www.rdocumentation.org/packages/PVAClone/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/PVAClone.svg?style=social&label=GitHub)](https://github.com/psolymos/PVAClone)
 
 ## intrval
 
 1st published: 2016-12-06
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/intrval)
-![](http://cranlogs.r-pkg.org/badges/last-month/intrval)
-![](http://cranlogs.r-pkg.org/badges/last-week/intrval)
-![](http://cranlogs.r-pkg.org/badges/last-day/intrval)
-![](https://tinyverse.netlify.com/badge/intrval)
+[![CRAN version](https://www.r-pkg.org/badges/version/intrval)](https://cran.r-project.org/package=intrval)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/intrval)](https://www.rdocumentation.org/packages/intrval/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/intrval.svg?style=social&label=GitHub)](https://github.com/psolymos/intrval)
 
 ## opticut
 
 1st published: 2016-12-17
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/opticut)
-![](http://cranlogs.r-pkg.org/badges/last-month/opticut)
-![](http://cranlogs.r-pkg.org/badges/last-week/opticut)
-![](http://cranlogs.r-pkg.org/badges/last-day/opticut)
-![](https://tinyverse.netlify.com/badge/opticut)
+[![CRAN version](https://www.r-pkg.org/badges/version/opticut)](https://cran.r-project.org/package=opticut)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/opticut)](https://www.rdocumentation.org/packages/opticut/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/opticut.svg?style=social&label=GitHub)](https://github.com/psolymos/opticut)
 
 ## bSims
 
 1st published: 2019-12-20
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/bSims)
-![](http://cranlogs.r-pkg.org/badges/last-month/bSims)
-![](http://cranlogs.r-pkg.org/badges/last-week/bSims)
-![](http://cranlogs.r-pkg.org/badges/last-day/bSims)
-![](https://tinyverse.netlify.com/badge/bSims)
+[![CRAN version](https://www.r-pkg.org/badges/version/bSims)](https://cran.r-project.org/package=bSims)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/bSims)](https://www.rdocumentation.org/packages/bSims/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/bSims.svg?style=social&label=GitHub)](https://github.com/psolymos/bSims)
 
 ## vegan
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/vegan?color=orange)
-![](http://cranlogs.r-pkg.org/badges/last-month/vegan?color=orange)
-![](http://cranlogs.r-pkg.org/badges/last-week/vegan?color=orange)
-![](http://cranlogs.r-pkg.org/badges/last-day/vegan?color=orange)
-![](https://tinyverse.netlify.com/badge/vegan?color=orange)
-
-## plotrix
-
-![](http://cranlogs.r-pkg.org/badges/grand-total/plotrix?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-month/plotrix?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-week/plotrix?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-day/plotrix?color=yellow)
-![](https://tinyverse.netlify.com/badge/plotrix?color=yellow)
-
-## epiR
-
-![](http://cranlogs.r-pkg.org/badges/grand-total/epiR?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-month/epiR?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-week/epiR?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-day/epiR?color=yellow)
-![](https://tinyverse.netlify.com/badge/epiR?color=yellow)
-
-## adegenet
-
-![](http://cranlogs.r-pkg.org/badges/grand-total/adegenet?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-month/adegenet?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-week/adegenet?color=yellow)
-![](http://cranlogs.r-pkg.org/badges/last-day/adegenet?color=yellow)
-![](https://tinyverse.netlify.com/badge/adegenet?color=yellow)
-
+[![CRAN version](https://www.r-pkg.org/badges/version/vegan)](https://cran.r-project.org/package=vegan)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/vegan)](https://www.rdocumentation.org/packages/vegan/)
+[![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
+[![Github Stars](https://img.shields.io/github/stars/psolymos/vegan.svg?style=social&label=GitHub)](https://github.com/psolymos/vegan)
