@@ -1,10 +1,12 @@
 #!/usr/bin/env Rscript
 
-library(jsonlite)
-library(devtools)
+cat(">>> Updating download and revdep stats <<<\n\n")
+cat("* Loading libraries ... ")
+suppressPackageStartupMessages(library(jsonlite))
+suppressPackageStartupMessages(library(devtools))
 
-today <- Sys.Date()
-
+cat("OK\n* Defining functions and variables ... ")
+today <- as.POSIXct(Sys.Date(), tz="America/Edmonton")
 ## package list of interest
 pkgs <- c(
     ## creator, maintainer
@@ -45,11 +47,14 @@ get_stats <- function (packages, drop_last_month=TRUE) {
         res <- res[res$start < max(res$start),]
     res
 }
+
+cat("OK\n* Getting stats ... ")
 dl <- get_stats(pkgs)
 ## reverse dependencies
 rd <- lapply(pkgs, revdep)
 names(rd) <- pkgs
 
+cat("OK\n* Writing results ... ")
 Format <- function(pkg) {
     list(
         name=pkg,
@@ -65,4 +70,5 @@ dir.create("_stats")
 writeLines(toJSON(rd), paste0("_stats/revdeps_",
     substr(as.character(today), 1, 7), ".json"))
 writeLines(toJSON(List), paste0("_stats/stats_latest.json"))
+cat("OK\n\nDONE\n\n")
 
