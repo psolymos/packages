@@ -73,7 +73,6 @@ for (i in Dates[Dates != Today]) {
 }
 Rds[[Today]] <- rd
 
-cat("OK\n* Writing results ... ")
 Format <- function(pkg) {
     revs <- list(
         date=Dates,
@@ -100,6 +99,14 @@ Format <- function(pkg) {
 }
 List <- lapply(pkgs, Format)
 
+cat("OK\n* Summaries:")
+summary(as.Date(Dates))
+tmp <- t(sapply(List, function(z)
+    as.character(range(z$downloads$date))))
+dimnames(tmp) <- list(pkgs, c("Min", "Max"))
+data.frame(tmp, n=sapply(List, function(z) length(z$downloads$date)))
+
+cat("\n* Writing results ... ")
 dir.create("_stats")
 writeLines(toJSON(Dates), paste0("_stats/dates.json"))
 writeLines(toJSON(rd), paste0("_stats/revdeps_", Today, ".json"))
