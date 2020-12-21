@@ -5,6 +5,12 @@ cat("* Loading libraries ... ")
 suppressPackageStartupMessages(library(jsonlite))
 suppressPackageStartupMessages(library(devtools))
 
+unlink("docs", recursive = TRUE)
+dir.create("docs")
+file.copy("www/index.html", "docs/index.html")
+dir.create("docs/assets")
+file.copy("www/assets", "docs", recursive = TRUE)
+
 cat("OK\n* Defining functions and variables ... ")
 today <- as.POSIXct(Sys.Date(), tz="America/Edmonton")
 Today <- substr(as.character(today), 1, 10)
@@ -68,6 +74,9 @@ names(rd) <- pkgs
 
 Rds <- list()
 for (i in Dates[Dates != Today]) {
+    download.file(
+        paste0("https://peter.solymos.org/packages/revdeps_", i, ".json"),
+        paste0("docs/revdeps_", i, ".json"))
     Rds[[i]] <- fromJSON(
         paste0("https://peter.solymos.org/packages/revdeps_", i, ".json"))
 }
