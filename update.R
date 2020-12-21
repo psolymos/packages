@@ -107,7 +107,6 @@ dimnames(tmp) <- list(pkgs, c("Min", "Max"))
 data.frame(tmp, n=sapply(List, function(z) length(z$downloads$date)))
 
 cat("\n* Writing results ... ")
-#dir.create("_stats")
 writeLines(toJSON(Dates), paste0("docs/dates.json"))
 writeLines(toJSON(rd), paste0("docs/revdeps_", Today, ".json"))
 writeLines(toJSON(List, auto_unbox=TRUE), paste0("docs/stats_latest.json"))
