@@ -1,5 +1,7 @@
 # R packages by [@psolymos](https://github.com/psolymos/)
 
+Collect some CRAN stats for the following R packages:
+
 - [mefa](#mefa)
 - [dclone](#dclone)
 - [pbapply](#pbapply)
