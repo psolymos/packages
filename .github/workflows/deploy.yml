@@ -2,10 +2,10 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 10 * *'
-#  push:
-#    branches:
-#      - main
-#      - master
+  push:
+    branches:
+      - main
+      - master
 
 name: deploy
 
