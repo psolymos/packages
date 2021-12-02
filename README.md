@@ -16,7 +16,6 @@ Collect some CRAN stats for the following R packages:
 - [bSims](#bsims)
 - [vegan](#vegan)
 
-
 ## mefa
 
 1st published: 2007-12-07
