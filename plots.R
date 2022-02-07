@@ -78,3 +78,8 @@ for (i in nam) {
   unlink(paste0("images/", i, "-downloads.png"))
   unlink(paste0("images/", i, "-revdeps.png"))
 }
+
+
+
+x <- jsonlite::fromJSON("https://raw.githubusercontent.com/psolymos/packages/gh-pages/stats_latest.json")
+sum(unlist(lapply(x$downloads$count, sum)))/10^6
