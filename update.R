@@ -19,6 +19,7 @@ Dates <- sort(unique(
     Today)))
 ## package list of interest
 dat <- list(
+    "rconfig"=list(org="analythium", date1="2021-02-21"),
     "mefa"=list(org="psolymos", date1="2007-12-07"),
     "dclone"=list(org="datacloning", date1="2009-11-05"),
     "pbapply"=list(org="psolymos", date1="2010-09-03"),
