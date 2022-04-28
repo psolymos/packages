@@ -130,3 +130,10 @@ Collect some CRAN stats for the following R packages:
 [![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/vegan)](https://www.rdocumentation.org/packages/vegan/)
 [![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
 [![Github Stars](https://img.shields.io/github/stars/vegandevs/vegan.svg?style=social&label=GitHub)](https://github.com/vegandevs/vegan)
+
+## rconfig
+
+[![CRAN version](https://www.r-pkg.org/badges/version/rconfig)](https://cran.r-project.org/package=rconfig)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/rconfig)](https://www.rdocumentation.org/packages/rconfig/)
+[![Dependencies](https://tinyverse.netlify.com/badge/rconfig)]()
+[![Github Stars](https://img.shields.io/github/stars/analythium/rconfig.svg?style=social&label=GitHub)](https://github.com/analythium/rconfig)
