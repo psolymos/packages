@@ -15,6 +15,8 @@ Collect some CRAN stats for the following R packages:
 - [opticut](#opticut)
 - [bSims](#bsims)
 - [vegan](#vegan)
+- [rconfig](#rconfig)
+- [deps](#deps)
 
 ## mefa
 
@@ -126,6 +128,8 @@ Collect some CRAN stats for the following R packages:
 
 ## vegan
 
+1st published: 2001-09-06
+
 [![CRAN version](https://www.r-pkg.org/badges/version/vegan)](https://cran.r-project.org/package=vegan)
 [![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/vegan)](https://www.rdocumentation.org/packages/vegan/)
 [![Dependencies](https://tinyverse.netlify.com/badge/mefa)]()
@@ -133,7 +137,18 @@ Collect some CRAN stats for the following R packages:
 
 ## rconfig
 
+1st published: 2022-02-21
+
 [![CRAN version](https://www.r-pkg.org/badges/version/rconfig)](https://cran.r-project.org/package=rconfig)
 [![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/rconfig)](https://www.rdocumentation.org/packages/rconfig/)
 [![Dependencies](https://tinyverse.netlify.com/badge/rconfig)]()
 [![Github Stars](https://img.shields.io/github/stars/analythium/rconfig.svg?style=social&label=GitHub)](https://github.com/analythium/rconfig)
+
+## deps
+
+1st published: 2023-03-24
+
+[![CRAN version](https://www.r-pkg.org/badges/version/deps)](https://cran.r-project.org/package=deps)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/deps)](https://www.rdocumentation.org/packages/deps/)
+[![Dependencies](https://tinyverse.netlify.com/badge/deps)]()
+[![Github Stars](https://img.shields.io/github/stars/analythium/deps.svg?style=social&label=GitHub)](https://github.com/analythium/deps)
