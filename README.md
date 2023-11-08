@@ -152,3 +152,4 @@ Collect CRAN stats for the following R packages:
 [![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/deps)](https://www.rdocumentation.org/packages/deps/)
 [![Dependencies](https://tinyverse.netlify.com/badge/deps)]()
 [![Github Stars](https://img.shields.io/github/stars/analythium/deps.svg?style=social&label=GitHub)](https://github.com/analythium/deps)
+
