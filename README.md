@@ -17,6 +17,7 @@ Collect CRAN stats for the following R packages:
 - [vegan](#vegan)
 - [rconfig](#rconfig)
 - [deps](#deps)
+- [tryr](#tryr)
 
 ## mefa
 
@@ -137,4 +138,13 @@ Collect CRAN stats for the following R packages:
 [![CRAN version](https://www.r-pkg.org/badges/version/deps)](https://cran.r-project.org/package=deps)
 [![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/deps)](https://www.rdocumentation.org/packages/deps/)
 [![Github Stars](https://img.shields.io/github/stars/analythium/deps.svg?style=social&label=GitHub)](https://github.com/analythium/deps)
+
+## tryr
+
+1st published: 2024-05-25
+
+[![CRAN version](https://www.r-pkg.org/badges/version/tryr)](https://cran.r-project.org/package=tryr)
+[![RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/tryr)](https://www.rdocumentation.org/packages/tryr/)
+[![Github Stars](https://img.shields.io/github/stars/analythium/tryr.svg?style=social&label=GitHub)](https://github.com/analythium/tryr)
+
 
