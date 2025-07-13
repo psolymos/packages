@@ -7,13 +7,13 @@ pkgnews <- function(x) {
     paste0(x[i], collapse="\n")
 }
 
-pkg <- "mefa4"
+pkg <- "pbapply"
 
-api_url <- paste0("https://psolymos.r-universe.dev/api/packages/", pkg)
-j <- fromJSON(api_url)
+j <- fromJSON(paste0("https://psolymos.r-universe.dev/api/packages/", pkg))
 checks <- j[["_jobs"]]
 platforms <- checks$config[!startsWith(checks$config, "wasm")]
 news_text <- readLines(gsub("README", "NEWS", j[["_readme"]]))
+# chlog <- readLines(gsub("README\\.md", "inst/ChangeLog", j[["_readme"]]))
 
 cat(sprintf('Dear CRAN Maintainers,
 
@@ -32,6 +32,7 @@ maintainer',
 j$Version,
 pkg,
 paste0(platforms, collapse=", "),
+# ""))
 pkgnews(news_text)))
 
 checks
