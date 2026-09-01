@@ -5,88 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>R package stats by Peter Solymos</title>
+    <meta
+      name="description"
+      content="Monthly download counts and reverse dependencies for R packages maintained by Peter Solymos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css"
     />
     <style>
-      nav.navbar {
-        height: 6rem !important;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-          0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+      :root {
+        --accent: #2563eb;
+        --surface: #ffffff;
+        --bg: #f7f8fa;
+        --text-muted: #6b7280;
       }
 
-      /* #lineChart {
-        background-color: rgb(233, 232, 232);
-        border-radius: 6px;
-        box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1) !important;
-      } */
+      html,
+      body {
+        background-color: var(--bg);
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      nav.navbar {
+        height: 5rem !important;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06),
+          0 1px 2px 0 rgba(0, 0, 0, 0.04) !important;
+      }
+
+      .navbar-item.brand {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      .hero.is-brand {
+        background: linear-gradient(135deg, #eef2ff 0%, #f7f8fa 60%);
+      }
+
+      .hero.is-brand .title {
+        color: #1f2937;
+      }
+
+      .hero.is-brand .subtitle {
+        color: var(--text-muted);
+      }
+
+      .chart-card {
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06),
+          0 1px 3px rgba(15, 23, 42, 0.08);
+        border: 1px solid rgba(15, 23, 42, 0.05);
+      }
+
+      .footer {
+        background-color: var(--surface);
+        border-top: 1px solid rgba(15, 23, 42, 0.06);
+      }
 
       /* typeahead styling */
       .typeahead,
       .tt-query,
       .tt-hint {
-        width: 400px;
-        height: 36px;
-        padding: 8px 12px;
-        font-size: 16px;
-        line-height: 40px;
-        border: 1px solid #ccc;
-        /*  -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-              border-radius: 8px; */
+        width: 320px;
+        height: 40px;
+        padding: 8px 14px;
+        font-size: 15px;
+        line-height: 24px;
+        border: 1px solid #e2e5ea;
+        border-radius: 8px;
         outline: none;
       }
 
       .typeahead {
-        background-color: #fff;
+        background-color: var(--surface);
       }
 
       .typeahead:focus {
-        border: 2px solid #0097cf;
+        border: 1px solid var(--accent);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
       }
 
       .tt-query {
-        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
       }
 
       .tt-hint {
-        color: #999;
+        color: #9aa0aa;
       }
 
       .tt-menu {
-        width: 400px;
-        margin: 12px 0;
-        padding: 8px 0;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        margin: 8px 0;
+        padding: 6px 0;
+        background-color: var(--surface);
+        color: #1f2937;
+        border: 1px solid #e2e5ea;
+        border-radius: 8px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
       }
 
       .tt-suggestion {
-        padding: 3px 20px;
-        font-size: 16px;
-        line-height: 24px;
+        padding: 6px 16px;
+        font-size: 15px;
+        line-height: 22px;
       }
 
-      .tt-suggestion:hover {
+      .tt-suggestion:hover,
+      .tt-suggestion.tt-cursor {
         cursor: pointer;
         color: #fff;
-        background-color: #0097cf;
-      }
-
-      .tt-suggestion.tt-cursor {
-        color: #fff;
-        background-color: #0097cf;
+        background-color: var(--accent);
       }
 
       .tt-suggestion p {
@@ -104,8 +146,8 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
-            Packages by @psolymos
+          <a class="navbar-item brand is-size-5">
+            📦 Packages by @psolymos
           </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
@@ -123,10 +165,10 @@
                       class="input is-rounded typeahead"
                       id="spp-select"
                       type="text"
-                      placeholder="R packages"
+                      placeholder="Search R packages…"
                     />
-                    <span class="icon is-medium is-left">
-                      <i class="fa fa-search"></i>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-search"></i>
                     </span>
                   </div>
                 </div>
@@ -137,36 +179,53 @@
               href="https://github.com/psolymos"
               target="_blank"
             >
-              GitHub
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="hero ">
+    <section class="hero is-brand">
       <div class="hero-body">
         <div class="container">
-          <div class="columns">
-            <div class="column">
-              <div style="width:100%;">
-                <canvas id="lineDl" width="300" height="200"></canvas>
-              </div>
-            </div>
-            <div class="column">
-              <div style="width:100%;">
-                <canvas id="lineRd" width="300" height="200"></canvas>
-              </div>
+          <h1 class="title is-3">R Package Stats</h1>
+          <p class="subtitle is-6">
+            Monthly downloads and reverse dependencies for packages maintained
+            by @psolymos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-desktop">
+          <div class="column">
+            <div class="box chart-card">
+              <div id="lineDl" style="width:100%; height:320px;"></div>
             </div>
           </div>
-
+          <div class="column">
+            <div class="box chart-card">
+              <div id="lineRd" style="width:100%; height:320px;"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p id="footer"></p>
+        <p id="footer">
+          Data from
+          <a href="https://cranlogs.r-pkg.org/" target="_blank">cranlogs</a>
+          &middot; Charts by
+          <a href="https://echarts.apache.org/" target="_blank"
+            >Apache ECharts</a
+          >
+        </p>
       </div>
     </footer>
     <script type="text/javascript" src="./assets/jquery.min.js"></script>
@@ -174,7 +233,10 @@
       type="text/javascript"
       src="./assets/typeahead.bundle.min.js"
     ></script>
-    <script type="text/javascript" src="./assets/charts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"
+    ></script>
     <script>
       $(document).ready(function() {
         //const baseurl = ".";
@@ -188,61 +250,87 @@
           menu.classList.toggle("is-active");
         });
 
-        var dlChart = new Chart(document.getElementById("lineDl"), {
-          type: "line",
-          data: {
-            labels: [],
-            datasets: [
+        function areaTimeAxisOption(title, seriesName) {
+          return {
+            tooltip: {
+              trigger: "axis",
+              position: function(pt) {
+                return [pt[0], "10%"];
+              }
+            },
+            title: {
+              left: "center",
+              text: title,
+              subtext: ""
+            },
+            xAxis: {
+              type: "time",
+              boundaryGap: false
+            },
+            yAxis: {
+              type: "value",
+              boundaryGap: [0, "30%"]
+            },
+            dataZoom: [
               {
-                data: [],
-                label: "Monthly downloads",
-                borderColor: "#3e95cd",
-                fill: true
+                type: "inside",
+                start: 0,
+                end: 100
+              },
+              {
+                start: 0,
+                end: 100
+              }
+            ],
+            series: [
+              {
+                name: seriesName,
+                type: "line",
+                smooth: true,
+                symbol: "none",
+                areaStyle: {},
+                itemStyle: { color: "#2563eb" },
+                data: []
               }
             ]
-          },
-          options: {
-            title: {
-              display: true,
-              text: ""
-            }
-          }
-        });
-        var rdChart = new Chart(document.getElementById("lineRd"), {
-          type: "line",
-          data: {
-            labels: [],
-            datasets: [
-              {
-                data: [],
-                label: "Reverse dependencies",
-                borderColor: "#3e95cd",
-                fill: true
-              }
-            ]
-          },
-          options: {
-            title: {
-              display: true,
-              text: ""
-            }
-          }
+          };
+        }
+
+        var dlChart = echarts.init(document.getElementById("lineDl"));
+        dlChart.setOption(areaTimeAxisOption("Download stats", "Monthly downloads"));
+        var rdChart = echarts.init(document.getElementById("lineRd"));
+        rdChart.setOption(areaTimeAxisOption("Reverse dependencies", "Reverse dependencies"));
+
+        window.addEventListener("resize", function() {
+          dlChart.resize();
+          rdChart.resize();
         });
 
+        function toSeriesData(dates, counts) {
+          return dates.map(function(d, i) {
+            return [d, counts[i]];
+          });
+        }
+
         function updateCharts(blob) {
-          dlChart.options.title.text = blob.organization + '/' + blob.name;
-          dlChart.data.labels = blob.downloads.date;
-          dlChart.data.datasets[0].data = blob.downloads.count;
-          dlChart.update();
-          rdChart.data.labels = blob.revdeps.date;
-          rdChart.data.datasets[0].data = blob.revdeps.count;
-          rdChart.update();
+          var subtext = blob.organization + "/" + blob.name;
+          dlChart.setOption({
+            title: { subtext: subtext },
+            series: [{ data: toSeriesData(blob.downloads.date, blob.downloads.count) }]
+          });
+          rdChart.setOption({
+            title: { subtext: subtext },
+            series: [{ data: toSeriesData(blob.revdeps.date, blob.revdeps.count) }]
+          });
         }
 
         $.getJSON(
           baseurl + "/stats_latest.json",
           function(data) {
-            updateCharts(data[2]);
+            var defaultBlob = data.filter(function(val) {
+              return val.name == "pbapply";
+            });
+            updateCharts(defaultBlob.length ? defaultBlob[0] : data[2]);
             var species = data.map(val => val.name);
 
             // typeahead
