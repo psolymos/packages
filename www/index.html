@@ -301,6 +301,11 @@
         var rdChart = echarts.init(document.getElementById("lineRd"));
         rdChart.setOption(areaTimeAxisOption("Reverse dependencies", "Reverse dependencies"));
 
+        // link dataZoom (slider) interaction between the two charts
+        dlChart.group = "packageCharts";
+        rdChart.group = "packageCharts";
+        echarts.connect("packageCharts");
+
         window.addEventListener("resize", function() {
           dlChart.resize();
           rdChart.resize();
